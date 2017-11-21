@@ -1,0 +1,22 @@
+<template name="home">
+  
+  {{#if currentUser}}
+	  <div class="row inline">
+	    <aside class="col-md-3">
+	      {{> profile}}
+	      {{> friendship}}
+	    </aside>
+	    <div class="col-md-9">
+	      {{> post}}
+	      {{> timeline}}      
+	    </div>
+	  </div>
+  {{else}}
+    <div class="text-center">
+      <h1>App Church</h1>
+      <h3>Não esta logado? Clique em "Sign In/Up".</h3>
+    </div>
+  
+  {{/if}}
+
+</template>

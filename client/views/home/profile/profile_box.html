@@ -1,0 +1,16 @@
+<template name="profileBox">
+
+{{#with currentUser.profile}}
+  <h6><small><i class="fa fa-users fa-3x" aria-hidden="true" style="color: #17a2b8"></i></small> {{name}}</h6>
+  <p><small> {{about}} </small> </p>
+  <a href="#" id="editar" style="color: #17a2b8"><i class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></i><small>edit</small></a><br>
+  
+{{else}}
+  <p>Perfil incompleto</p>
+  <button class="btn btn-block">
+   Completar perfil
+  </button>
+
+{{/with}}
+
+</template>
