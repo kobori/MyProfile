@@ -1,16 +1,18 @@
 <template name="home">
   
   {{#if currentUser}}
-	  <div class="row inline">
-	    <aside class="col-md-3">
-	      {{> profile}}
-	      {{> friendship}}
-	    </aside>
-	    <div class="col-md-9">
-	      {{> post}}
-	      {{> timeline}}      
-	    </div>
-	  </div>
+    <div class="row inline justify-content-md-center">
+      
+        <aside class="col-sm-3 col-md-2">
+          {{> profile}}
+          {{> friendship}}
+        </aside>
+        <div class="col-sm-9 col-md-6">
+          {{> post}}
+          {{> timeline}}      
+        </div>
+        
+    </div>
   {{else}}
     <div class="text-center">
       <h1>App Church</h1>

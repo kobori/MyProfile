@@ -26,15 +26,3 @@ Router.route('/', function(){
 })
 
 
-Router.route('/amigos', function(){
-  var _id = Meteor.userId();
-
-  this.render('amigos', {
-
-    data: function(){
-      return{
-        posts: Post.find({})
-      }
-    }
-  })
-})
