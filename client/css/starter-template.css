@@ -2,10 +2,16 @@ body {
   background-color: #fff;
 }
 .starter-template {
-  padding: 3rem 1.5rem;
+ 
   text-align: center;
 }
 
 .dropdown-menu{
 	width: 380px;
+}
+
+@media (min-width: 991px) { 
+.container-fluid{
+	width: 1300px;
+}
 }
